@@ -1,0 +1,41 @@
+{
+	"name": "crude-server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon --exec ts-node src/index.ts",
+		"build": "tsc",
+		"start": "node dist/index.js",
+		"seed": "ts-node src/db/seeds/index.ts",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint": "biome lint ./src",
+		"lint:fix": "biome lint --write ./src",
+		"format": "biome format ./src",
+		"format:fix": "biome format --write ./src",
+		"check": "biome check ./src",
+		"check:fix": "biome check --write ./src"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@typegoose/typegoose": "^12.20.0",
+		"cors": "^2.8.5",
+		"express": "^5.2.1",
+		"http-status-codes": "^2.3.0",
+		"mongoose": "^8.9.5",
+		"zod": "^4.1.13"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.3.8",
+		"@types/cors": "^2.8.19",
+		"@types/express": "^5.0.6",
+		"@types/node": "^25.0.9",
+		"dotenv": "^17.2.3",
+		"dotenv-expand": "^12.0.3",
+		"nodemon": "^3.1.11",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.9.3"
+	}
+}
