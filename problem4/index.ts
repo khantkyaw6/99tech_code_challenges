@@ -3,10 +3,11 @@ function checkInputHandler(n: number): void {
 }
 
 
+// * With Loop
+//  * Time Complexity: O(n)
+//  * Space Complexity: O(1)
 
 function sum_to_n_a(n: number): number {
-    // your code here
-
     checkInputHandler(n)
 
     let result = 0;
@@ -19,14 +20,19 @@ function sum_to_n_a(n: number): number {
 }
 
 
-// Using Arithmetic equation
+// * Using Arithmetic equation
+//  * Time Complexity: O(1)
+//  * Space Complexity: O(1)
 function sum_to_n_b(n: number): number {
     checkInputHandler(n)
 
     return (n * (n + 1)) / 2
 }
 
-// Using reculsive pattern
+// * Using reculsive pattern
+// * Time Complexity: O(n)
+// * Space Complexity: O(n) (call stack)
+
 function sum_to_n_c(n: number): number {
     checkInputHandler(n)
     if (n === 0) return 0
@@ -34,9 +40,9 @@ function sum_to_n_c(n: number): number {
 
 }
 
-console.log("A:", sum_to_n_a(5)); 
-console.log("B:", sum_to_n_b(5)); 
-console.log("C:", sum_to_n_c(5)); 
-console.log("D:", sum_to_n_a(0)); 
-console.log("E:", sum_to_n_b(-3)); 
+console.log("A:", sum_to_n_a(5));
+console.log("B:", sum_to_n_b(5));
+console.log("C:", sum_to_n_c(5));
+console.log("D:", sum_to_n_a(0));
+console.log("E:", sum_to_n_b(-3));
 console.log("F:", sum_to_n_c(23)); 
