@@ -23,6 +23,7 @@
 		"@typegoose/typegoose": "^12.20.0",
 		"cors": "^2.8.5",
 		"express": "^5.2.1",
+		"express-rate-limit": "^8.2.1",
 		"http-status-codes": "^2.3.0",
 		"mongoose": "^8.9.5",
 		"zod": "^4.1.13"
